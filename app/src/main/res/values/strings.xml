@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AIO</string>
+    <string name="title_category">Category</string>
+    <string name="title_search">Search</string>
+    <string name="title_home">Home</string>
+    <string name="title_like">Like</string>
+    <string name="title_my_page">MyPage</string>
+</resources>

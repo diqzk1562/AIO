@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bank">
+        <item>OO은행</item>
+        <item>XX은행</item>
+        <item>OX은행</item>
+        <item>XO은행</item>
+    </string-array>
+</resources>

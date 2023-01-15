@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/aio_logo_img_r"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/my_review_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ECECEC"
+            android:backgroundTint="#F1F1F1"
+            android:text="my review"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/my_review"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="good"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/review_bool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_thumb_up_24"
+                app:backgroundTint="#FF7E47"
+                android:layout_marginRight="100dp"/>
+            <Button
+                android:id="@+id/set_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="modify\nreview"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ECECEC"
+            android:backgroundTint="#F1F1F1"
+            android:text="reviews"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+        <ListView
+            android:id="@+id/review_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

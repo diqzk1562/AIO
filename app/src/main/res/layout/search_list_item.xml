@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:padding="5dp">
+    <LinearLayout
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/sli_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/sli_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="상품 이름"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:id="@+id/sli_pri"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="가격"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/sli_sal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="판매량"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <LinearLayout
+        android:id="@+id/like_item"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/sli_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/sli_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="상품 이름"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:id="@+id/sli_pri"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="가격"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/sli_sal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="판매량"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/select_like"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_favorite_24"
+            app:backgroundTint="#E34242" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
